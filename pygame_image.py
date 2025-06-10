@@ -35,7 +35,7 @@ def main():
         if key_lst[pg.K_LEFT]:
             kt_rct.move_ip((-1, 0))
         if key_lst[pg.K_RIGHT]:
-            kt_rct.move_ip((1, 0))
+            kt_rct.move_ip((2, 0))
         pg.display.update()
         tmr += 1        
         clock.tick(200)
