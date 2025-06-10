@@ -13,11 +13,14 @@ def main():
     kt_img = pg.image.load("fig/3.png")
     kt_img = pg.transform.flip(kt_img,True,False)
     tmr = 0
+    
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        screen.blit(bg_img, [-tmr, 0])
+        x=tmr
+        screen.blit(bg_img, [-x, 0])
+        screen.blit(bg_img,[-x+1600,0])
         screen.blit(kt_img,[300,200])
         pg.display.update()
         tmr += 1        
